@@ -1,4 +1,5 @@
-export function seyHi() {
-    console.log("Hi");
-    const age = 22;
+const num = 0;
+
+for (let x = 0; x < 9; x++){
+
 }
