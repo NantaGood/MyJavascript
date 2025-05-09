@@ -5,42 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Js</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <a href="https://www.facebook.com/doragon.sunny.10/" target="_blank">
-        <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg" alt="My Facebook"
-            style="float: right;height: 100px; width: 100px;">
-    </a>
+    <header>
+        <nav>
+            Nav แหละ
+        </nav>
+    </header>
 
-    <table border="">
-        <tr>
-            <th>id</th>
-            <th>name</th>
-            <th>age</th>
-        </tr>
-        <tr>
-            <td>01</td>
-            <td>Toby</td>
-            <td>30</td>
-        </tr>
-        <tr>
-            <td>02</td>
-            <td>To3</td>
-            <td>35</td>
-        </tr>
-        <tr>
-            <td>03</td>
-            <td>Toad</td>
-            <td>40</td>
-        </tr>
-    </table>
+    <img id="my-img" src="my.jpg" alt="my-img">
 
-    <ul>
-        <li>Coffie</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
+    <form>
+        <fieldset class="info-box">
+            <legend id="info-title">ข้อมูลส่วนตัว</legend>
+            <div><strong>ชื่อ-นามสกุล</strong></div>
+            <input type="text" name="firstname" id="firstname">
+            <input type="text" name="lasttname" id="lasttname"> <br>
+            <div><strong>วัน/เดือน/ปีเกิด</strong></div>
+            <input type="date" name="birthdate" id="birthdate"> <br>
+            <div><strong>Email</strong></div>
+            <input type="email" name="email" id="email"> <br>
+            <button type="submit" onclick="alert('Hey');">ส่งข้อมูล</button>
+
+        </fieldset>
+    </form>
+
+    <canvas id="my-canvas">Hey</canvas>
+
+    <script src="main.js"></script>
 </body>
 
 </html>

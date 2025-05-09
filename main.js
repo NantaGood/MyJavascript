@@ -1,11 +1,15 @@
-const output = document.getElementById("output");
+const textMyCanvas = document.getElementById("my-canvas");
+const textM = textMyCanvas.getContext("2d");
+const colorM = textM.createLinearGradient(0, 0, 200, 0);
+const imgM = document.getElementById("my-img");
 
-for (let x = 1; x < 9; x++){
-    let dot = "";
-    for (let y = 0; y<x; y++) {
-        dot += "*";
-    }
+imgM.onload = () => {
+// textM.fillStyle = "blue";
+// textM.fillRect(0, 0, textMyCanvas.width, textMyCanvas.height);
+textM.drawImage(imgM,10,10);
 
-    output.textContent += dot + "\n";
-    output.innerHTML += dot + "<br>\n"
-}
+// textM.font = "20px Arial"
+// textM.fillStyle = "red";
+
+// textM.fillText("สวัสดี Canvas!", 50, 75);
+};
