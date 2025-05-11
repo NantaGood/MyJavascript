@@ -4,38 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn Js</title>
-
+    <title>Learn to Dev Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            Nav แหละ
+        <nav class="navi-bar">
+            <img id="my-img" src="my.jpg" alt="my-img">
+            <Strong>Hey, Nantapong</Strong>
+            <li>Home</li>
+            <li>About Me</li>
+            <li>Brand</li>
+            <li>Product</li>
         </nav>
     </header>
+    <section class="form-info">
+        <form class="form-info">
+            <fieldset class="form-info">
+                <label for="fname">First name: </label>
+                <input type="text" id="fname" name="fname">
 
-    <img id="my-img" src="my.jpg" alt="my-img">
+                <label for="lname">Last name: </label>
+                <input type="text" id="lname" name="lname">
 
-    <form>
-        <fieldset class="info-box">
-            <legend id="info-title">ข้อมูลส่วนตัว</legend>
-            <div><strong>ชื่อ-นามสกุล</strong></div>
-            <input type="text" name="firstname" id="firstname">
-            <input type="text" name="lasttname" id="lasttname"> <br>
-            <div><strong>วัน/เดือน/ปีเกิด</strong></div>
-            <input type="date" name="birthdate" id="birthdate"> <br>
-            <div><strong>Email</strong></div>
-            <input type="email" name="email" id="email"> <br>
-            <button type="submit" onclick="alert('Hey');">ส่งข้อมูล</button>
+                <label for="birth">Birth date: </label>
+                <input type="date" id="birth" name="birth">
 
-        </fieldset>
-    </form>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email">
 
-    <canvas id="my-canvas">Hey</canvas>
+                <label for="computer-language">Computer Language :</label>
 
-    <script src="main.js"></script>
+                <div class="language">
+                <label for="javascrip"><input type="radio" id="javascript" name="com-language" value="javascrip">
+                    Javascrip</label>
+
+                <label for="python"><input type="radio" id="python" name="com-language" value="python"> Python</label>
+
+                <label for="c+"><input type="radio" id="cplus" name="com-language" value="cplus"> C+</label></div>
+
+                <button class="submit">Send</button>
+            </fieldset>
+        </form>
+    </section>
 </body>
 
 </html>
